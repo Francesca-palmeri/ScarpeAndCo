@@ -18,7 +18,58 @@ namespace ScarpeCo.Controllers
                 CoverImageBase64 = GetBase64Image("nike.jpg"),
                 Image1Base64 = GetBase64Image("scarpa1.jpg"),
                 Image2Base64 = GetBase64Image("scarpa2.jpg")
+            },
+            new Product
+            {
+                Id = 2,
+                Name = "Scarpe Adidas",
+                Price = 89.99m,
+                Description = "Scarpe da corsa leggere e traspiranti, adatte per allenamenti intensi",
+                CoverImageBase64 = GetBase64Image("adidas.jpg"),
+                Image1Base64 = GetBase64Image("scarpa3.jpg"),
+                Image2Base64 = GetBase64Image("scarpa4.jpg")
+            },
+            new Product
+            {
+                Id = 3,
+                Name = "Scarpe Puma",
+                Price = 79.99m,
+                Description = "Scarpe da ginnastica con suola in gomma, adatte per ogni tipo di sport",
+                CoverImageBase64 = GetBase64Image("puma.jpg"),
+                Image1Base64 = GetBase64Image("scarpa5.jpg"),
+                Image2Base64 = GetBase64Image("scarpa6.jpg")
+            },
+            new Product
+            {
+                Id = 4,
+                Name = "Scarpe Reebok",
+                Price = 69.99m,
+                Description = "Scarpe da corsa con ammortizzazione, adatte per lunghe distanze",
+                CoverImageBase64 = GetBase64Image("rebook.jpg"),
+                Image1Base64 = GetBase64Image("scarpa7.jpg"),
+                Image2Base64 = GetBase64Image("scarpa8.jpg")
+            },
+            new Product
+            {
+                Id = 5,
+                Name = "Scarpe Asics",
+                Price = 59.99m,
+                Description = "Scarpe da tennis con suola antiscivolo, adatte per campi in terra battuta",
+                CoverImageBase64 = GetBase64Image("asics.jpg"),
+                Image1Base64 = GetBase64Image("scarpa9.jpg"),
+                Image2Base64 = GetBase64Image("scarpa10.jpg")
+            },
+            new Product
+            {
+                Id = 6,
+                Name = "Scarpe New Balance",
+                Price = 49.99m,
+                Description = "Scarpe da ginnastica con tomaia in mesh, adatte per il tempo libero",
+                CoverImageBase64 = GetBase64Image("NewBalance.jpg"),
+                Image1Base64 = GetBase64Image("scarpa11.jpg"),
+                Image2Base64 = GetBase64Image("scarpa12.jpg")
             }
+
         };
 
             // Metodo per visualizzare tutti i prodotti

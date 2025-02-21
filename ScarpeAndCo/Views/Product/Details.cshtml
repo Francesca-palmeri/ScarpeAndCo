@@ -3,16 +3,27 @@
     ViewData["Title"] = "Dettagli Prodotto";
 }
 
-<h2>@Model.Name</h2>
+<h2 class=" my-4">@Model.Name</h2>
 
 <div>
-    <img src="data:image/jpeg;base64,@Model.CoverImageBase64" class="img-fluid" alt="@Model.Name">
-    <p><strong>Prezzo:</strong> @Model.Price €</p>
-    <p><strong>Descrizione:</strong> @Model.Description</p>
+	<div class="d-flex border-bottom pb-4">
+		<div>
+			<img src="data:image/jpeg;base64,@Model.CoverImageBase64" class="img-fluid" alt="@Model.Name">
 
-    <h4>Immagini Aggiuntive</h4>
-    <img src="data:image/jpeg;base64,@Model.Image1Base64" class="img-fluid" alt="Immagine 1">
-    <img src="data:image/jpeg;base64,@Model.Image2Base64" class="img-fluid" alt="Immagine 2">
+		</div>
+		<div class=" ms-5">
+			<p class=" text-primary fs-4"><strong>Prezzo:</strong> @Model.Price €</p>
+			<p ><strong>Descrizione:</strong> @Model.Description</p>
+		</div>
+	</div>
+    
+   
+    <div class="DettagliCard">
+		<h4 class=" my-4">Immagini Aggiuntive</h4>
+		<img src="data:image/jpeg;base64,@Model.Image1Base64" class=" w-25 img-fluid" alt="Immagine 1">
+		<img src="data:image/jpeg;base64,@Model.Image2Base64" class=" w-25 img-fluid" alt="Immagine 2">
+    </div>
+   
 </div>
 
 <a href="@Url.Action("Index", "Product")" class="btn btn-secondary mt-3">Torna alla vetrina</a>

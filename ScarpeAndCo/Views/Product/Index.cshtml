@@ -4,13 +4,13 @@
     ViewData["Title"] = "Vetrina Prodotti";
 }
 
-<h2>Vetrina Prodotti</h2>
+<h2 class=" my-3">Vetrina Prodotti</h2>
 
 <div class="row">
     @foreach (var product in Model)
     {
-        <div class="col-md-4">
-            <div class="card">
+        <div class="col-md-4 mb-2 h-50" >
+            <div class="card" >
                 <img src="data:image/jpeg;base64,@product.CoverImageBase64" class="card-img-top" alt="@product.Name">
                 <div class="card-body">
                     <h5 class="card-title">@product.Name</h5>

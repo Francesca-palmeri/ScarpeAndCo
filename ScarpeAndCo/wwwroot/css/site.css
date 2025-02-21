@@ -20,3 +20,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.DettagliCard {
+    width: 30%;
+    height: 40%;
+}
