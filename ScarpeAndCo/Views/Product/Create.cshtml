@@ -1,0 +1,41 @@
+﻿@model ScarpeAndCo.Models.Product
+
+@{
+    ViewData["Title"] = "Aggiungi Prodotto";
+}
+
+<h1 class="my-4">Aggiungi Nuovo Prodotto</h1>
+
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Nome</label>
+        <input asp-for="Name" placeholder="Inserisci Nome del prodotto" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Price" class="control-label">Prezzo</label>
+        <input asp-for="Price" placeholder="Inserisci cifra (senza simbolo valuta)" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description" class="control-label">Descrizione</label>
+        <textarea asp-for="Description" placeholder="Inserisci una breve descrizione del prodotto" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CoverImageFile" class="control-label">Immagine di copertina</label>
+        <input asp-for="CoverImageFile" type="file" class="form-control-file" />
+        <span asp-validation-for="CoverImageFile" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Image1File" class="control-label">immagine modello scarpa</label>
+        <input asp-for="Image1File" type="file" class="form-control-file" />
+        <span asp-validation-for="Image1File" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Image2File" class="control-label">Immagine modello scapra laterale</label>
+        <input asp-for="Image2File" type="file" class="form-control-file" />
+        <span asp-validation-for="Image2File" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Product</button>
+</form>

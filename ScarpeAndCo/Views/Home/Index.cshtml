@@ -1,8 +1,18 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿
+@{
+    ViewData["Title"] = "Benvenuto su Scarpe & Co";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class=" text-center">
+    <h1 class="display-4">Benvenuto su Scarpe & Co!</h1>
+    <p class="lead">Scopri le nostre scarpe da tennis di alta qualità, perfette per ogni occasione!</p>
+    <hr class="my-4">
+    <p>Esplora la nostra collezione di scarpe sportive e scopri il tuo nuovo paio di scarpe preferito.</p>
+    <a class="btn btn-primary btn-lg" href="@Url.Action("Index", "Product")" role="button">Vedi la Vetrina</a>
 </div>
+
+<div class="container">
+    <h2 class="text-center mt-3">I Nostri Prodotti</h2>
+    <p class="text-center">Sfoglia le scarpe che abbiamo selezionato per te! Clicca su "Vedi la Vetrina" per visualizzare tutti i prodotti disponibili.</p>
+</div>
+
